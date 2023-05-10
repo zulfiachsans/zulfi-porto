@@ -1,6 +1,6 @@
 :root {
     --primary: #009688;
-    --bg: #373C38;
+    --bg: #373c38;
 }
 
 * {
@@ -186,14 +186,16 @@ body {
 
 .about,
 .education,
-.products,
+.experience,
+.skills,
 .contact {
     padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .education h2,
-.products h2,
+.experience h2,
+.skills h2,
 .contact h2 {
     text-align: center;
     font-size: 2.6rem;
@@ -202,7 +204,8 @@ body {
 
 .about h2 span,
 .education h2 span,
-.products h2 span,
+.experience h2 span,
+.skills h2 span,
 .contact h2 span {
     color: var(--primary);
 }
@@ -231,7 +234,7 @@ body {
 }
 
 .about .row .content p {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
     font-size: 1.3rem;
     font-weight: 100;
     line-height: 1.6;
@@ -241,13 +244,14 @@ body {
 /* Education Section */
 
 .education h2,
-.products h2,
+.experience h2,
 .contact h2 {
     margin-bottom: 1rem;
 }
 
 .education p,
-.products p,
+.experience p,
+.skills p,
 .contact p {
     text-align: center;
     max-width: 30rem;
@@ -278,28 +282,28 @@ body {
 }
 
 
-/* Products Section */
+/* experience Section */
 
-.products .row {
+.experience .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
     margin-top: 4rem;
 }
 
-.products .product-card {
+.experience .product-card {
     text-align: center;
     border: 1px solid #666;
     padding: 2rem;
 }
 
-.products .product-icons {
+.experience .product-icons {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
 }
 
-.products .product-icons a {
+.experience .product-icons a {
     width: 4rem;
     height: 4rem;
     color: #fff;
@@ -311,42 +315,48 @@ body {
     align-items: center;
 }
 
-.products .product-icons a:hover {
+.experience .product-icons a:hover {
     background-color: var(--primary);
     border: 1px solid var(--primary);
 }
 
-.products .product-image {
+.experience .product-image {
     padding: 1rem 0;
 }
 
-.products .product-image img {
+.experience .product-image img {
     height: 25rem;
 }
 
-.products .product-content h3 {
+.experience .product-content h3 {
     font-size: 2rem;
 }
 
-.products .product-stars {
+.experience .product-stars {
     font-size: 1.7rem;
     padding: 0.8rem;
     color: var(--primary);
 }
 
-.products .product-stars .star-full {
+.experience .product-stars .star-full {
     fill: var(--primary);
 }
 
-.products .product-price {
+.experience .product-price {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-.products .product-price span {
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1rem;
+
+/* Skills Section */
+
+.skills .row {
+    display: grid;
+    margin-top: 20px;
+}
+
+.skills .column {
+    margin: auto;
 }
 
 
@@ -584,6 +594,9 @@ footer .credit a {
     }
     .about .row .content p {
         font-size: 1.6rem;
+    }
+    .skills .row {
+        flex-wrap: wrap;
     }
     .education p {
         font-size: 1.2rem;
